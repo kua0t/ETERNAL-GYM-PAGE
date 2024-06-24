@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #434343, #000000 );
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+h2 {
+    text-align: center;
+    color: #ffffff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+form img{
+    width: 32px;
+    height: 32px;
+}
+label {
+    margin-top: 10px;
+    color: white;
+}
+
+input, select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: 0;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+.icono-validacion {
+    content: '';
+    background-image: url('imagenes/iconos/cheque.png');
+    background-size: contain;
+    background-position: top right;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}

@@ -1,0 +1,735 @@
+*{
+    margin: 0px;
+    font-family: monospace;
+}
+body{
+    background: #000000;
+    background: linear-gradient(to bottom, #434343, #000000);
+}
+a{
+    text-decoration: none;
+    color: lightgray;
+}
+#titulo-header{
+    text-align: center;
+    letter-spacing: 2px;
+}
+header{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    z-index: 50;
+    top: -20px;
+    align-items: center;
+    padding: 20px;
+    letter-spacing: 1px;
+    width: auto;
+}
+button{
+    background-color: transparent;
+    border: 0px;
+}
+button:hover{
+    cursor: pointer;
+}
+#dropdownMenu {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    background: linear-gradient(to right, #434343, #000000);
+    transition: right 0.3s;
+    z-index: 1000;
+}
+
+#dropdownMenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#dropdownMenu li {
+    padding: 10px;
+}
+
+#dropdownMenu a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+#toggleButton {
+    margin: 10px;
+    padding: 10px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#toggleButton.active {
+    display: none;
+}
+#closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.background{
+    padding-top: 250px;
+    padding-bottom: 400px;
+}
+.home-page h2{
+    text-align: center;
+    color: white;
+    font-size: 70px;
+    filter: brightness(1);
+}
+@keyframes aparecerDesaparecer {
+    0%, 100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    25%, 75% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+}
+.sub-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+  
+  .container__typing {
+    width: 59ch;
+    animation: escribir 10s steps(59) alternate infinite, transparent .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #fff;
+    border-right: 3px solid;
+}
+  
+  @keyframes escribir {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 59ch;
+    }
+}
+  @keyframes transparent {
+    50% {
+      border-color: transparent;
+    }
+}
+  
+.nosotros-page{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 20px;
+    gap: 20px;
+    padding: 20px;
+}
+
+.parrafos {
+    text-align: justify;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 120px;
+}
+.nosotros-info{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 200px;
+}
+.estudiantes{
+    display: flex;
+}
+.nosotros-info > div > div{
+    margin: 20px 15px;
+    border: 1px solid white;
+    padding: 10px 10px;
+    border-radius: 20px;
+}
+.nosotros-info h3{
+    padding-bottom: 100px;
+    margin-left: 35px;
+    letter-spacing: 3px;
+}
+.nosotros-info img{
+    width: 64px;
+    height: 64px;
+    padding: 30px 30px;
+    background-color: white;
+    border-radius: 100%;
+}
+.estudiantes > div > h4{
+    padding-bottom: 30px;
+    letter-spacing: 2px;
+}
+.info-students h6{
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: start;
+}
+.info-students p{
+    font-size: 20px;
+    text-align: start;
+    letter-spacing: 1px;
+}
+.terciary-box > h3{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    margin-bottom: 175px;
+}
+.cards-idea{
+    color: white;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
+    gap: 25px;
+    margin: 0 auto;
+    width: 77%;
+    margin-bottom: 200px;
+    
+}
+.cards-idea > div{
+    filter: opacity(.8);
+    padding: 20px 20px;
+    border-radius: 25px;
+    animation: bording 10s ease-in alternate infinite;
+}
+.card-1{
+    background: linear-gradient(to right, #434343, transparent);
+}
+.card-2{
+    background: linear-gradient(to left, #434343, transparent);
+}
+.card-3{
+    background: linear-gradient(to right, #434343, transparent);
+}
+.card-4{
+    background: linear-gradient(to left, #434343, transparent);
+}
+.card-5{
+    background: linear-gradient(to right, #434343, transparent);
+}
+.cards-idea > div > h5{
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+.cards-idea > div > p{
+    font-size: 20px;
+}
+.maquinaria > h3{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+.maquinaria-box {
+    text-align: center;
+    color: white;
+    margin-bottom: 50px;
+    padding: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.maquinaria-box h3{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+.maquinaria-cards{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 250px;
+}
+.maquinaria-cards div{
+    margin: 0 20px;
+}
+.m-card1 p{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    margin-top: -275px;
+}
+.m-card2 p{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    margin-top: -275px;
+}
+.m-card3 p{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    margin-top: -275px;
+}
+
+.maquinaria-cards > div > img{
+    width: 256px;
+    height: 512px;
+    border-radius: 30px;
+    transition: .5s;
+    filter: opacity(0.4);
+}
+.maquinaria-cards > div > img:hover{
+    filter: opacity(1);
+    cursor: pointer;
+}
+@keyframes bording{
+    25%{
+        box-shadow: 0 0 10px 0 rgb(238, 238, 238);
+    }
+    50%{
+        box-shadow: 0 0 15px 0 white;
+    }
+    75%{
+        box-shadow: 0 0 15px 0 white;
+    }
+    100%{
+        box-shadow: 0 0 10px 0 white;
+    }
+}
+.caja-5{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.caja-5 > div{
+    margin: 20px;
+    padding: 80px 100px;
+}
+.caja-5 > div > div > p{
+    font-size: 20px;
+    margin-top: -40px;
+}
+.caja-5 > div > div > h5{
+    font-size: 20px;
+    margin-top: 20px;
+}
+.caja-5 > div > div > h6{
+    font-size: 20px;
+    margin-top: 10px;
+}
+.opiniones-clientes{
+    width: 50%;
+    margin: 0 auto;
+}
+.opiniones-clientes h4{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: 150px;
+}
+.info-sujeto img{
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+}
+.caja-opiniones{
+    background: linear-gradient(to bottom, #434343, transparent);
+}
+
+.titulo-metodo{
+    width: 45%;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    border-bottom: 2px solid white;
+    padding-bottom: 25px;
+    font-size: 40px;
+    margin-top: 200px;
+}
+.caja-metodos{
+    display: flex;
+    width: 40%;
+    margin: 0 auto;
+    justify-content: center;
+}
+.caja-metodos img{
+    width: 64px;
+    margin-top: 25px;
+    padding: 0px 10px;
+    margin-bottom: 200px;
+}
+footer{
+    background-color: transparent;
+    color: white;
+    border-top: 1px solid white;
+}
+.after-footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    padding-top: 40px;
+}
+.herramientas{
+    color: white;
+    font-size: 20px;
+}
+.herramientas h4{
+    text-align: center;
+}
+.herramientas p{
+    text-align: center;
+    font-size: 20px;
+    transition: .5s;
+    transform: scale(1);
+    padding: 3px 10px;
+}
+.herramientas p:hover{
+    transform: scale(1.1);
+}
+.opiniones h4{
+    font-size: 25px;
+}
+.opiniones h5{
+    font-size: 20px;
+}
+#send-opinion{
+    transition: 0.5s;
+    padding: 15px 92px;
+    margin-top: 25px;
+    font-family: monospace;
+}
+#send-opinion:hover{
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+}
+.social{
+    text-align: right;
+}
+.before-footer{
+    border-top: 1px solid white;
+    display: flex;
+    font-size: 25px;
+    padding: 20px 20px;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.data-fiscal{
+    display: flex;
+    justify-content: end;
+}
+.data-fiscal img{
+    cursor: pointer;
+    width: 48px;
+    margin: 10px;
+}
+#creditos{
+    border-right: 1px solid white;
+    margin-right: 20px;
+    padding-right: 50px;
+}
+#pagina, #legales, #privacidad{
+    margin-left: 40px;
+}
+@media (max-width: 1390px) { /*Laptop */
+    .nosotros-info img{
+        width: 64px;
+        height: 64px;
+    }
+    .estudiantes{
+        display: block;
+    }
+    .estudiantes > div{
+        display: grid;
+    }
+    .estudiantes > div h4{
+        display: none;
+    }
+    .caja-5 > div{
+        margin: 10px;
+        padding: 40px 50px;
+    }
+    .maquinaria-cards > div > img{
+        width: 230px;
+        height: 512px;
+        border-radius: 30px;
+    }
+    .caja-metodos{
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+        justify-content: center;
+    }
+}
+@media (max-width: 900px) { /*Tablet */
+    .estudiantes > div{
+        display: grid;
+    }
+    .estudiantes > div h4{
+        display: none;
+    }
+    .caja-5 > div{
+        margin: 10px;
+        padding: 20px 25px;
+    }
+    .maquinaria-cards > div > img{
+        width: 150px;
+        height: 370px;
+        border-radius: 30px;
+    }
+    .maquinaria-cards > div > p{
+        display: none;
+    }
+    .after-footer{
+        margin: 0 0;
+    }
+    .before-footer{
+        width: 90%;
+    }
+    #tituolo-header{
+        font-size: 10px;
+    }
+    .caja-metodos{
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    .sub-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+    }
+}
+@media (max-width: 800px) { /*Tablet 2 */
+    .caja-5 > div{
+        margin: 5px;
+        padding: 10px 15px;
+    }
+    .maquinaria-cards > div > img{
+        width: 100px;
+        height: 200px;
+        border-radius: 30px;
+    }
+    .maquinaria-cards > div > p{
+        display: none;
+    }
+    .after-footer{
+        margin: 0 0;
+    }
+    .before-footer{
+        width: 90%;
+    }
+    #tituolo-header{
+        font-size: 10px;
+    }
+    .info-sujeto img{
+        border-radius: 100%;
+        width: 60px;
+        height: 60px;
+    }
+    .info-estrellas{
+        display: none;
+    }
+    .caja-5 > div > div > p {
+        font-size: 14px;
+        margin-top: 0px;
+    }
+    .caja-5 > div > div > h5 {
+        font-size: 14px;
+    }
+    .caja-5 > div > div > h6 {
+        font-size: 14px;
+    }
+    .opiniones-clientes{
+        width: 90%;
+    }
+    .logo-footer{
+        display: none;
+    }
+    .opiniones h4{
+        font-size: 15px;
+    }
+    .opiniones h5{
+        font-size: 14px;
+    }
+    #send-opinion{
+        transition: 0.5s;
+        padding: 15px 35px;
+        margin-top: 25px;
+        font-family: monospace;
+    }
+    #creditos{
+        display: none;
+    }
+    #pagina{
+        display: none;
+    }
+    .after-footer{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    .maquinaria-cards{
+        margin-bottom: 25px;
+    }
+    #nosotros{
+        font-size: 55px;
+    }
+    .caja-metodos{
+        width: 60%;
+        display: block;
+        margin: 0 auto;
+    }
+    .caja-metodos > div{
+        display: flex;
+        justify-content: center;
+    }
+    .sub-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+    }
+    #titulo-header{
+        display: none;
+    }
+}
+@media (max-width: 500px){ /*mobile L */
+    .maquinaria-cards > div > img{
+        width: 65px;
+        height: 150px;
+        border-radius: 15px;
+    }
+    .opiniones h4{
+        font-size: 13px;
+    }
+    .opiniones h5{
+        font-size: 12px;
+    }
+    #send-opinion{
+        transition: 0.5s;
+        padding: 10px 15px;
+        margin-top: 15px;
+        font-family: monospace;
+    }
+    .aditional-info{
+        display: none;
+    }
+    .info-sujeto img{
+        border-radius: 100%;
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 450px){ /*mobile M */
+    #titulo-header{
+        display: none;
+    }
+    .titulo-metodo{
+        width: 40%;
+        font-size: 20px;
+        margin-top: 100px;
+    }
+    .caja-metodos{
+        display: flex;
+    }
+    .caja-metodos img{
+        width: 48px;
+        margin-top: 25px;
+        padding: 0px 5px;
+        margin-bottom: 5px;
+    }
+    .contenedor{
+        font-size: 13px;
+    }
+    #nosotros-title{
+        font-size: 13px;
+    }
+    .home-page h2{
+        font-size: 25px;
+    }
+    .sub-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+    }
+    #titulo-header{
+        display: none;
+    }
+}
+@media (max-width: 380px){ /*mobile S */
+    .maquinaria-cards > div > img{
+        width: 70px;
+        height: 140px;
+        border-radius: 15px;
+    }
+    .maquinaria-cards div{
+        margin: 0 5px;
+    }
+    .info-sujeto img{
+        border-radius: 100%;
+        width: 30px;
+        height: 30px;
+    }
+    .caja-5 > div > div > p {
+        font-size: 10px;
+    }
+    .caja-5 > div > div > h5 {
+        font-size: 11px;
+    }
+    .caja-5 > div > div > h6 {
+        font-size: 12px;
+    }
+    .data-fiscal{
+        display: none;
+    }
+    .before-footer{
+        padding: 24px 15px;
+    }
+    .caja-metodos img{
+        width: 40px;
+        margin-top: 25px;
+        padding: 0px 5px;
+        margin-bottom: 55px;
+    }
+    .herramientas{
+        font-size: 14px;
+    }
+    .social img{
+        width: 20px;
+    }
+    .sub-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 9px;
+    }
+    #titulo-header{
+        display: none;
+    }
+}
+@media (max-width: 340px) { /*Galaxy fold */
+    .sub-text {
+        font-size: 7px;
+    }
+}
